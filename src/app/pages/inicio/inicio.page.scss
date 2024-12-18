@@ -1,0 +1,34 @@
+.texto-bienvenida {
+    color: black;
+}
+
+.color-1 {
+    color: black;
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.footer-textt {
+    font-size: 18px; 
+    color: #333; 
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+.menu-container {
+    background-color: #f9f9f9; 
+    border-radius: 12px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0.6, 0.6, 0.6, 0.6); 
+    margin: 20px auto; 
+    max-width: 400px; 
+}
+
+ion-button {
+    margin-top: 10px; 
+    font-weight: bold; 
+    --background-hover: #0cd4ee; 
+    --background: #00bcd4; 
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}

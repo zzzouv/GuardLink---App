@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="color-principal">
+      <ion-title id="tPrincipal">GuardLink</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h1 class="tittle-text ion-text-center">UBICACION ACTUAL</h1>
+
+<ion-content class="ion-padding">
+  <ion-img class="large-img" src="assets/images/logoapp.svg"></ion-img>
+  
+  <div class="ubi-container">
+
+    <ion-img class="large-img" src="assets/images/nav.svg"></ion-img>
+    <h1 class="footer-textt">Esta es tu ubicación actual:
+    </h1>
+    
+    <div class="coordenadas-box footer-textt" *ngIf="ubicacionTexto"><p>{{ ubicacionTexto }}</p></div>
+
+    <ion-button class="ion-margin-top color-principal footer-textt" expand="block" (click)="verCordenadas()">Ver Coordenadas</ion-button>
+  </div>
+
+  <ion-button class="ion-margin-top color-principal footer-textt" expand="block" routerLink="/inicio">Volver atrás</ion-button>
+  <h1 class="footer-text ion-text-center">www.GuardLink.cl</h1>
+</ion-content>
+
+

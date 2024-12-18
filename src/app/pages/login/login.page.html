@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar class="color-principal">
+      <ion-title>GuardLink</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h1 class="tittle-text ion-text-center">INICIO SESION</h1>
+  
+  <ion-content class="ion-padding">
+    <ion-img src="assets/images/logoapp.svg" class="logo-img"></ion-img>
+    
+    <div class="login-container">
+        <h1 class="footer-textt ion-text-center">Iniciar sesion</h1>
+ 
+      <ion-item class="ion-margin-top">
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon><ion-input [(ngModel)]="loginUsuario" placeholder="Ingresa tu usuario"></ion-input>
+      </ion-item>
+  
+      <ion-item class="ion-margin-top">
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-icon name="keypad-outline" slot="start"></ion-icon><ion-input [(ngModel)]="loginContrasena" type="password" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+  
+      <ion-button expand="block" class="ion-margin-top color-principal" (click)="validarCredenciales()">
+        Iniciar Sesión
+      </ion-button>
+  
+      <ion-text>
+        <p class="ion-text-center recover-password-text" [routerLink]="['/recuperar']">¿Olvidaste tu contraseña?</p>
+        <p class="ion-text-center recover-password-text" [routerLink]="['/register']">Crear una cuenta</p>
+      </ion-text>
+    </div>
+
+    <h1 class="footer-textt ion-text-center">www.GuardLink.cl</h1>
+  </ion-content>
+  
